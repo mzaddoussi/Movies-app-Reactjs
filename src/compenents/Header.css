@@ -1,0 +1,25 @@
+.header{
+    background-color: #373b69;
+    display: flex;
+    justify-content: space-between;
+}
+.search{
+    margin: 15px 32px 15px;
+    padding: 5px 25px;
+    border-radius: 50px;
+    border: 2px solid #22254b;
+    color: #ffffff;
+}
+.search i{
+    margin-right: 10px;
+    color: #757575;
+    font-weight: 400;
+}
+.search-text:focus{
+    outline: none;
+}
+.search-text{
+    border: none;
+    background-color: transparent;
+    color: #ffffff;
+}

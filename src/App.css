@@ -1,38 +1,95 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
+  background-color: #22254b;
+  height: 100%;
+  color: #ffffff;
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+.movies-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 0 10px 25px 10px;
 }
-
-.App-link {
-  color: #61dafb;
+.next_back{
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 25px;
+  cursor: pointer;
+  height: 80px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-prev,
+.btn-next{
+  background-color: transparent;
+  border-radius: 25px;
+  border: 1px solid #ffffff75;
+  transition: width 0.8s;
+  position: absolute;
+  width: 60px;
+  transition: all 0.8s;
+}
+.button{
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: space-evenly;
+}
+span.texto {
+  font-size: 20px;
+}
+.btn-next .texto{
+  margin-left: -80px;
+  transition: all 0.8s;
+}
+.btn-next i {
+  margin-left: 25px;
+}
+.btn-prev i{
+  transition: all 0.8s;
+  margin-left: 80px;
+  margin-right: 45px;
+}
+.forword-button{
+  position: relative;
+}
+.backword-button{
+  position: relative;
+}
+.btn-next{
+  left: 0;
+}
+.btn-prev{
+  right: 0;
+}
+.btn-next:hover,
+.btn-prev:hover{
+  width: 100px;
+  background-color: #d3d4de;
+}
+.btn-prev:hover i{
+  margin-left: unset;
+  margin-right: unset;
+}
+.btn-next:hover .texto{
+  margin-left: unset;
+}
+.btn-next:hover .fa-angle-double-right{
+  margin-left: unset;
+}
+.button i{
+  color: #ffffffc7;
+  font-weight: 300;
+}
+.button:hover i{
+  color: #000000;
+}
+.movie-rating{
+    background-color: #22254b;
+    padding: 3px 6px;
+    border-radius: 5px;
+}
+.button:focus {
+  outline: none;
 }
