@@ -50,7 +50,7 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <div className="App" basename={`${process.env.PUBLIC_URL}/`}>
       <Header data = {Search} />
       <div className="next_back pt-4">
         <span className="backword-button">
